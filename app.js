@@ -1,8 +1,11 @@
+const ls = new LS();
+
+const weatherLocation = ls.getLocationData();
+
+
 const form = document.querySelector("form");
 form.addEventListener("submit", newCity);
-
-const weather = new Weather("Sus");
-
+const weather = new Weather(weatherLocation);
 const ui = new UI();
 
 function newCity(){
@@ -19,4 +22,5 @@ function getWeather(){
 	})
 	.catch(error => console.log(error));
 }
+getWeather();
 

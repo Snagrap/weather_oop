@@ -6,16 +6,17 @@
 	<title>Current Weather</title>
 </head>
 <body>
-	<form id="vorm">
-		<input id="change-city" type="text">
-		<label for ="city">Lisage linn</label>
-		<input type="submit" value="Add City" class="btn">
-	</form>
-
-	<div id="weather" class="divfull">
-		<div id="description" class="divfirst"></div>
-		<h1 id="temp" class="div2"></h1>
-		<div id="location" class="div3"></div>
+	<div class="divAll">
+		<div id="weather" class="divfull">
+			<div id="description" class="divfirst"></div>
+			<h1 id="temp" class="div2"></h1>
+			<div id="location" class="div3"></div>
+		</div>
+		<form id="vorm">
+			<input id="change-city" type="text">
+		
+			<input type="submit" value="Add City" class="btn">
+		</form>
 	</div>
 	<script src="classes/weather.js"></script>
 	<script src="classes/UI.js"></script>

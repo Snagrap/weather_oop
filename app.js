@@ -11,6 +11,7 @@ const ui = new UI();
 function newCity(){
 	const CityInput = document.querySelector("#change-city").value;
 	weather.changeCity(CityInput);
+	ls.setLocationData(CityInput)
 	getWeather();
 	event.preventDefault();
 }

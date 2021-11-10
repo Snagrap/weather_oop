@@ -11,7 +11,7 @@ class LS{
 		}
 		return this.city;
 	}
-	setLocationData(){
-		
+	setLocationData(city){
+		localStorage.setItem("city", city);
 	}
 }
